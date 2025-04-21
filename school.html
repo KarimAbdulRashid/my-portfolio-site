@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bright Future SHS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #34495e;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: #2980b9;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    #announcements {
+      background: white;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="barber.html">Barber Shop</a> |
+  <a href="school.html">School Website</a>
+</nav>
+
+<header>
+  <h1>Bright Future SHS</h1>
+  <p>Empowering students through ICT</p>
+</header>
+
+<section>
+  <h2>Latest Announcements</h2>
+  <div id="announcements"></div>
+</section>
+
+<script>
+  const announcements = [
+    "Mid-term exams begin on May 6th.",
+    "ICT practicals scheduled for next Friday.",
+    "New coding club meeting on Wednesday after school."
+  ];
+
+  const container = document.getElementById("announcements");
+  announcements.forEach(item => {
+    const p = document.createElement("p");
+    p.textContent = "- " + item;
+    container.appendChild(p);
+  });
+</script>
+
+</body>
+</html>

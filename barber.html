@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fresh Cutz Barber Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+    nav {
+      background: #34495e;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: #000;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .btn {
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="barber.html">Barber Shop</a> |
+  <a href="school.html">School Website</a>
+</nav>
+
+<header>
+  <h1>Fresh Cutz Barber Shop</h1>
+  <p>Look Fresh. Stay Sharp.</p>
+</header>
+
+<section>
+  <h2>About Us</h2>
+  <p>We provide clean cuts, fades, and stylish trims with a modern vibe. Book an appointment now!</p>
+  <button class="btn" onclick="bookNow()">Book Now</button>
+  <p id="confirmation" style="margin-top:15px; color:green;"></p>
+</section>
+
+<script>
+  function bookNow() {
+    document.getElementById("confirmation").innerText = "Thanks! Your booking request has been received.";
+  }
+</script>
+
+</body>
+</html>
